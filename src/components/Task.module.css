@@ -1,6 +1,9 @@
 .newTask {
   display: flex;
-  gap: 0.5rem
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: calc(0px - 3.5rem - 6px);
+
 }
 
 
@@ -11,14 +14,27 @@
   background: var(--gray-500);
   border-radius: 8px;
   border: 0;
-  padding: 0 20px;
+  padding: 1rem;
+ 
 }
 
 .newTask button{
-  background: var(--blue);
+  background: var(--blue-dark);
   color: var(--gray-100);
   border-radius: 8px;
-  width: 20%;
+  padding: 0.950rem;
   border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 8px;
+  
 }
 
+
+
+
+.newTask button:hover{
+  background: var(--blue)
+}
