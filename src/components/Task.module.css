@@ -1,0 +1,24 @@
+.newTask {
+  display: flex;
+  gap: 0.5rem
+}
+
+
+.newTask input[type="newTaks"]{
+  height: 54px;
+  width: 100%;
+  color: var(--gray-100);
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 0;
+  padding: 0 20px;
+}
+
+.newTask button{
+  background: var(--blue);
+  color: var(--gray-100);
+  border-radius: 8px;
+  width: 20%;
+  border: 0;
+}
+
