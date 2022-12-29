@@ -1,0 +1,23 @@
+.info {
+    display:  flex;
+    justify-content: space-between;
+    margin-top: 5.8125rem;
+    gap: 8px;
+}
+
+
+.info strong span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    margin-left: 8px;
+}
+
+.created {
+    color: var(--blue);
+}
+
+.completed {
+    color: var(--purple)
+}

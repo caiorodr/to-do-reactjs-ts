@@ -7,7 +7,7 @@
 }
 
 
-.newTask input[type="newTaks"]{
+.newTask input[type="newTask"]{
   height: 54px;
   width: 100%;
   color: var(--gray-100);
@@ -16,6 +16,11 @@
   border: 0;
   padding: 1rem;
  
+}
+
+
+.newTask input[type="newTask"]::placeholder {
+  color: var(--gray-300)
 }
 
 .newTask button{
@@ -29,7 +34,7 @@
   justify-content: center;
   
   gap: 8px;
-  
+  transition: background-color 1s;
 }
 
 

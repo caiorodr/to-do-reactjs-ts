@@ -2,7 +2,7 @@
   background: var(--gray-700);
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 4.625rem;
 }
 
 .header img {
