@@ -1,0 +1,56 @@
+.empty {
+    border-top: solid 1px var(--gray-400);
+    border-radius: 8px;
+}
+
+.emptyContent {
+    display: grid;
+    place-items: center;
+    line-height: 1.6;
+    padding: 4rem;
+}
+
+
+.emptyContent img {
+    margin-bottom: 1rem;
+}
+
+.notEmptyContent1{
+    display: table-column ;
+}
+
+
+.taskContent {
+    background: var(--gray-500);
+    color: var(--gray-200);
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid 1px var(--gray-400);
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    line-height: 1.6;
+}
+
+.taskContent + .taskContent {
+    margin-top: 0.75rem;
+ }
+
+
+
+.check {
+    background: var(--purple-dark);
+    color: var(--gray-100);
+    font-weight: bold;
+    border-radius: 999px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.delete{
+    margin-top: 4px;
+    color: var(--gray-300);
+    margin: 4px;
+}

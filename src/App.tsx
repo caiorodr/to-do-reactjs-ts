@@ -4,6 +4,7 @@ import styles from './App.module.css';
 import './global.css';
 import { Task } from './components/Task';
 import { Info } from './components/Info';
+import { List } from './components/List';
 
 export function App() {
 
@@ -13,6 +14,10 @@ export function App() {
       <div className={styles.wrapper}>
         <Task/>
         <Info/>
+        <div  className={styles.empty}>
+          <List/>
+        </div>
+        
       </div>
     </div>
   )
