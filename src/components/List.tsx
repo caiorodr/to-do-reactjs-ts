@@ -20,17 +20,20 @@ export function List(){
             : 
                 <article className={styles.notEmptyContent}>
                     <div className={styles.taskContent}>
-                        <Check size={18}  className={styles.check}/>
-                        <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
-                        <Trash size={20}  className={styles.delete}/>
+                        <div className={styles.taskChecked}>
+                            <button title='Marcar tarefa' name='checked'>
+                                <Check 
+                                    weight="bold" 
+                                    size={12}
+                                />
+                            </button>
+                            <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+                            <button name='delete'>
+                                <Trash size={20}/>
+                            </button>
+                        </div>
                     </div>
-                    
 
-                    <div className={styles.taskContent}>
-                        <Check size={18}  className={styles.check}/>
-                        <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
-                        <Trash size={20} className={styles.delete}/>
-                    </div>
                 </article>
             }
         </div>
