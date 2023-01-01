@@ -1,7 +1,7 @@
 import styles from './List.module.css';
 import Clipboard from '../assets/Clipboard.svg'
 import { useState } from 'react';
-import { Check, Trash } from 'phosphor-react';
+import { Check, Trash, Circle } from 'phosphor-react';
 
 export function List(){
     const [taskList, setTaskList] = useState('');
@@ -20,8 +20,23 @@ export function List(){
             : 
                 <article className={styles.notEmptyContent}>
                     <div className={styles.taskContent}>
+                        <div className={styles.taskUnChecked}>
+                            <button title='Marcar tarefa' name='unChecked'>
+                                <Check 
+                                    weight="bold" 
+                                    size={12}
+                                />
+                            </button>
+                            <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+                            <button name='delete'>
+                                <Trash size={20}/>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div className={styles.taskContent}>
                         <div className={styles.taskChecked}>
-                            <button title='Marcar tarefa' name='checked'>
+                            <button title='Desmarcar tarefa' name='checked'>
                                 <Check 
                                     weight="bold" 
                                     size={12}
