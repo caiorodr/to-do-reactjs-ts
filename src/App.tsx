@@ -12,12 +12,7 @@ export function App() {
     <div>
       <Header/>
       <div className={styles.wrapper}>
-        <Task/>
-        <Info/>
-        <div  className={styles.empty}>
-          <List/>
-        </div>
-        
+        <Task/>   
       </div>
     </div>
   )

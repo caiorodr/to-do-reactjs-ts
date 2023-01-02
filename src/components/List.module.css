@@ -1,89 +1,91 @@
 .empty {
-    border-top: solid 1px var(--gray-400);
-    border-radius: 8px;
+   border-top: solid 1px var(--gray-400);
+   border-radius: 8px;
 }
 
 .emptyContent {
-    display: grid;
-    place-items: center;
-    line-height: 1.6;
-    padding: 4rem;
+   display: grid;
+   place-items: center;
+   line-height: 1.6;
+   padding: 4rem;
 }
 
 
 .emptyContent img {
-    margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 .notEmptyContent1{
-    display: table-column ;
+   display: table-column ;
 }
 
 
 .taskContent {
-    background: var(--gray-500);
-    color: var(--gray-200);
-    padding: 1rem;
-    border-radius: 8px;
-    border: solid 1px var(--gray-400);
-  
-    line-height: 1.6;
+   background: var(--gray-500);
+   color: var(--gray-200);
+   padding: 1rem;
+   border-radius: 8px;
+   border: solid 1px var(--gray-400);
 
+   line-height: 1.6;
 }
 
 .taskContent + .taskContent {
-    margin-top: 0.75rem;
+   margin-top: 0.75rem;
  }
 
  .taskChecked {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0.75rem;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 0.75rem;
  }
 
 
  .taskChecked button[name = 'checked']{ 
-    background: var(--purple-dark);
-    padding: 4px;
-    border: 0;
-    color: var(--gray-200);
-    cursor: pointer;  
-    border-radius: 999px;
-    line-height: 0;
-    margin: 4px;
+   background: var(--purple-dark);
+   padding: 4px;
+   border: 0;
+   color: var(--gray-200);
+   cursor: pointer;  
+   border-radius: 999px;
+   line-height: 0;
+   margin: 4px;
 
-    transition: background-color 1s;
+   transition: background-color 1s;
  }
 
  .taskChecked button[name = 'checked']:hover{ 
-    background: var(--purple);
+   background: var(--purple);
  }
 
  .taskChecked button[name = 'delete']{ 
-    background: transparent;
-    padding: 4px;
-    border: 0;
-    color: var(--gray-300);
-    cursor: pointer;  
+   background: transparent;
+   padding: 4px;
+   border: 0;
+   color: var(--gray-300);
+   cursor: pointer;  
 
-    line-height: 0;
-    border-radius: 2px;
+   line-height: 0;
+   border-radius: 2px;
+   
+   transition: background-color 1s;
+   
  }
 
 
  .taskChecked button[name = 'delete']:hover{
-    background: var(--gray-400);
-    color: var(--danger);
+   background: var(--gray-400);
+   color: var(--danger);
     
  }
 
  .taskChecked p {
-    color: var(--gray-300);
-    text-decoration: line-through;
+   line-height: 1.5rem;
+   width: 100%;
+   color: var(--gray-300);
+   text-decoration: line-through;
  }
-
-
 
 
  .taskUnChecked {
@@ -93,7 +95,10 @@
    gap: 0.75rem;
 }
 
-
+.taskUnChecked p {
+   color: var(--gray-200);
+   width: 100%;
+}
 
 .taskUnChecked button[name = 'unChecked']{ 
    background: transparent;
@@ -122,6 +127,8 @@
 
    line-height: 0;
    border-radius: 2px;
+
+   transition: background-color 1s;
 }
 
 
